@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "rootDir": "source/",
+        "outDir": "build/",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "sourceMap": false
+    },
+    "compileOnSave": true,
+    "exclude": [
+        ".git",
+        "node_modules",
+        ".vscode"
+    ]
+}

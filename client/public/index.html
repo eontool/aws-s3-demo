@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+  <title>AWS S3 Demo Application</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/vendor.css" rel="stylesheet" media="screen">
+  <link href="css/app.css" rel="stylesheet" media="screen">
+
+  <script src="js/vendor.js" charset="UTF-8"></script>
+  <script src="js/app.js" charset="UTF-8"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div ng-controller="mainCtrl as mainCtrl">
+
+
+      <input type="text" name="" ng-model="mainCtrl.bucketName" placeholder="Bucket Name">
+      <button type="" ng-click="mainCtrl.addBucket()">Add</button>
+
+      <hr>
+
+      <button type="" ng-click="mainCtrl.getAllBuckets()">Load Buckets</button>
+      
+      <p>Results:</p>
+
+      <ul>
+        <li ng-repeat="item in mainCtrl.buckets.data">{{ item.Name }}</li>
+      </ul>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
